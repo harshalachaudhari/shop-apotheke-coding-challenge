@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "3df69e88-9ca8-494c-904a-933b8bfc7104",
+		"name": "Shop-Apotheke-Backend-Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9754551"
+	},
+	"item": [
+		{
+			"name": "Most Popular Repos by date and language",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true,
+					"connection": true,
+					"host": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/popular/repositories?beforeDate=2020-01-01&language=javascript",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"popular",
+						"repositories"
+					],
+					"query": [
+						{
+							"key": "beforeDate",
+							"value": "2020-01-01"
+						},
+						{
+							"key": "language",
+							"value": "javascript"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Most Popular Repos by date onwards",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true,
+					"connection": true,
+					"host": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/popular/repositories?afterDate=2020-01-01&language=javascript",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"popular",
+						"repositories"
+					],
+					"query": [
+						{
+							"key": "afterDate",
+							"value": "2020-01-01"
+						},
+						{
+							"key": "language",
+							"value": "javascript"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Most Popular Repos by stars and language",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true,
+					"connection": true,
+					"host": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/popular/repositories?sort=stars&language=javascript",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"popular",
+						"repositories"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "stars"
+						},
+						{
+							"key": "language",
+							"value": "javascript"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Most Popular Repos by stars and resultType",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true,
+					"connection": true,
+					"host": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/popular/repositories?sort=stars&resultType=most_rated",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"popular",
+						"repositories"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "stars"
+						},
+						{
+							"key": "resultType",
+							"value": "most_rated"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Most Popular Repos by stars and limit 100",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true,
+					"connection": true,
+					"host": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/popular/repositories?sort=stars&limit=100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"popular",
+						"repositories"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "stars"
+						},
+						{
+							"key": "limit",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Most Popular Repos by stars and limit 50",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true,
+					"connection": true,
+					"host": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/popular/repositories?sort=stars&limit=50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"popular",
+						"repositories"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "stars"
+						},
+						{
+							"key": "limit",
+							"value": "50"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
