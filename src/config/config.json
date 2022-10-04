@@ -1,0 +1,17 @@
+{
+  "dev": {
+    "PORT": 3000,
+    "BASE_URL": "https://api.github.com",
+    "SEARCH_REPOS_URL": "/search/repositories"
+  },
+  "test": {
+    "port": 4000,
+    "BASE_URL": "https://api.github.com",
+    "SEARCH_REPOS_URL": "/search/repositories"
+  },
+  "prod": {
+    "port": 5000,
+    "BASE_URL": "https://api.github.com",
+    "SEARCH_REPOS_URL": "/search/repositories"
+  }
+}
