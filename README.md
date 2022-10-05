@@ -11,7 +11,7 @@ Command lines:
 
 ### Endpoint
 
--Example: http://localhost:3000/popular/repositories?
+-Example: http://localhost:3000/popular/repositories?limit=50&language=javascript
 
 - GET /popular/repositories with below optional filtering parameters:
 
