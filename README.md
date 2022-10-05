@@ -26,3 +26,9 @@ Command lines:
 
 - Used Jest for testing the endpoint.
 - `npm run test` command to run tests
+
+### Dockerize App
+
+- Commands to build docker image and run this app
+- To Build : `docker build -t backend_challenge-1.0.0 .`
+- To Run : `docker run -p 3000:3000 -d backend_challenge-1.0.0`

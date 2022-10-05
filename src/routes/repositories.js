@@ -17,15 +17,6 @@ let generateURL = (params) => {
 };
 
 let formatParams = (params) => {
-  // if (formattedParams.q) {
-  //   console.log(formattedParams.q, 'is it coming here');
-  //   return Object.assign(formattedParams, {
-  //     sort: params.sort || 'stars',
-  //     order: params.resultType === 'least_rated' ? 'asc' : 'desc',
-  //     per_page: params.limit || 20,
-  //   });
-  // }
-
   let formattedParams = {
     q: '',
     sort: params.sort || 'stars',
@@ -55,8 +46,6 @@ let getPopularRepositories = async (params) => {
   try {
     let builtURL = generateURL(params);
 
-    console.log(builtURL, 'LOGGGGERERS');
-
     let response = await axios({
       method: 'get',
       url: builtURL,
@@ -73,6 +62,7 @@ let getPopularRepositories = async (params) => {
     return response;
   } catch (err) {
     console.error(err);
+    response.status(400).json({ message: 'Error while fetching repositories' });
   }
 };
 
